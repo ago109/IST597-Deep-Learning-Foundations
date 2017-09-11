@@ -78,7 +78,7 @@ theta = (b, w)
 L = computeCost(X, y, theta, beta)
 print("-1 L = {0}".format(L))
 i = 0
-while(i < n_epoch and halt == 0):
+while(i < n_epoch):
 	dL_db, dL_dw = computeGrad(X, y, theta, beta)
 	b = theta[0]
 	w = theta[1]

@@ -92,13 +92,13 @@ X2 = np.array(X2.values)
 y2 = np.array(y2.values)  
 w = np.zeros((1,X2.shape[1]))
 b = np.array([0])
-theta2 = (b, w)
+theta = (b, w)
 
 L = computeCost(X2, y2, theta2, beta)
 print("-1 L = {0}".format(L))
 i = 0
 while(i < n_epoch and halt == 0):
-	dL_db, dL_dw = computeGrad(X, y, theta, beta)
+	dL_db, dL_dw = computeGrad(X2, y2, theta, beta)
 	b = theta[0]
 	w = theta[1]
 	# update rules go here...

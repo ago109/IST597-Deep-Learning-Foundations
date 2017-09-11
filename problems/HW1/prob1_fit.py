@@ -76,10 +76,9 @@ theta = (b, w)
 L = computeCost(X, y, theta)
 print("-1 L = {0}".format(L))
 L_best = L
-halt = 0
 i = 0
 cost = [] # you can use this list variable to help you create the loss versus epoch plot at the end (if you want)
-while(i < n_epoch and halt == 0):
+while(i < n_epoch):
 	dL_db, dL_dw = computeGrad(X, y, theta)
 	b = theta[0]
 	w = theta[1]
