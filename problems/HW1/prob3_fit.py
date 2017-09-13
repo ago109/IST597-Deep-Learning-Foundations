@@ -122,7 +122,7 @@ print 'Error = {0}%'.format(err * 100.)
 
 
 # make contour plot
-xx, yy = np.mgrid[-5:5:.01, -5:5:.01]
+xx, yy = np.mgrid[-1.2:1.2:.01, -1.2:1.2:.01]
 xx1 = xx.ravel()
 yy1 = yy.ravel()
 grid = np.c_[xx1, yy1]
